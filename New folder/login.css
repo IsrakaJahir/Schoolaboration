@@ -1,0 +1,59 @@
+.left{
+	height: 560px;
+	width: 39%;
+	margin-left: 10%;
+	float: left;
+}
+.right{
+	width: 50%;
+	height: 500px;
+	float: left;
+	text-align: center;
+}
+.username{
+	width: 350px;
+	height: 30px;
+	font-size: 15px;
+}
+.password{
+	width: 350px;
+	height: 30px;
+	font-size: 15px; 
+}
+.signinbutton{
+	width: 25%;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #2d6b47;
+	border: none;
+	font-family: "Bookman Old Style";
+	font-size: 100%;
+	color: white;
+}
+.forgetpass{
+   float: right;
+   margin-right: 23%;
+}
+h1{
+	font-size: 30px;
+	text-align: center;
+	color: #2d6b47;
+    font-family: Bradley Hand, cursive;
+}
+font{
+	font-size: 21px;
+	color: #78787e;
+    font-family: Comic Sans MS,cursive;
+}
+input{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.user{
+    color: #78787e;
+    font-family: "Bookman Old Style";
+}
+a{
+	text-decoration: none;
+}
