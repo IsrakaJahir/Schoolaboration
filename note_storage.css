@@ -1,0 +1,229 @@
+*{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+
+}
+.header {
+  display: block;
+  height: 100px;
+  background: white; 
+}
+.account{
+
+  float:right;
+  margin-right: 20px;
+}
+.profile{
+
+  float: right;
+  height: 400px;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: black;
+
+}
+
+.col {
+  display: block;
+  float: left;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.col-1{
+  width: 20%;
+  background: white;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.col-3 {
+  width: 55%;
+  background: white;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.col-2 {
+/*  width: 25%;
+  background: black;*/
+}
+
+.row {
+  display: block;
+  float: left;
+  height: 90px;
+  box-sizing: border-box;
+  background: #c1e0e6;
+}
+
+.row-1 {
+  width: 20%;
+ 
+}
+.row-3 {
+  width: 55%;
+  
+}
+
+.row-2 {
+  width: 25%;
+   font-family: Bradley Hand ,cursive;
+   letter-spacing: 3px;
+   color: #3c596e;
+ 
+}
+
+input {
+  font-size: 15px;
+}
+
+h3 {
+  font-family: serif;
+  
+}
+.col-1 ul{
+  
+ font-size: 120%;
+}
+.col-1 a{
+  text-decoration: none;
+}
+.col-1 li{
+  margin-top: 10%;
+
+}
+li{
+  list-style-type: none;
+}
+.box{
+  margin-top: 1%;
+  height: 130%;
+  width: 300px;
+  background:#c1e0e6;
+}
+.box1{
+  height: 7%;
+  width: 80%;
+  background: white;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-family: Bradley Hand ,cursive;
+  letter-spacing: 3px;
+  font-size: 16px;
+
+}
+
+.newfolder{
+  height: 7%;
+  width: 80%;
+  background: white;
+
+  font-family: Bradley Hand ,cursive;
+  letter-spacing: 3px;
+  font-size: 16px;  
+  border: 0px;
+   outline: none;
+
+}
+
+
+
+
+.box a{
+  text-decoration: none;
+  color: black;
+}
+.recent{
+height: 40%;
+margin-left: 0px; 
+background-color: white;
+}
+.folders{
+height: 25%;
+margin-top: 5%;
+margin-left: 0px; 
+  background-color: white;
+}
+.my_notes{
+height: 40%;
+margin-top: 5%;
+margin-left: 0px; 
+background-color: white;
+}
+.recent1{
+margin-top: 10px;
+margin-left: 10px;
+height: 100%;
+width:300px;
+float: left;
+background-color: rgb(218,227,243);
+}
+
+.folder1{
+margin-top: 10px;
+margin-left: 10px;
+height: 80%;
+width:300px;
+float: left;
+background-color: rgb(218,227,243);
+
+}
+.notes1{
+margin-top: 10px;
+margin-left: 10px;
+height: 100%;
+width:300px;
+float: left;
+background-color: rgb(218,227,243);
+}
+.Search{
+
+height: 35px;
+width: 300px;
+}
+.popup{
+  
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  border-radius: 6px;
+  top: 0;
+  left:50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  visibility: hidden;
+  transition: transform 0.4s,top 0.4s;
+  font-size: 20px; 
+
+}
+
+.open-popup{
+
+visibility: visible;
+top: 50%;
+transform: translate(-50%,-50%) scale(1);
+
+}
+.popup button{
+ width: 70px;
+ margin-top: 50px;
+ padding: 10px 0;
+ background: rgb(218,227,243);
+ color: black;
+ border:0px;
+ outline: none;
+ font-size: 18px;
+ border-radius: 4px;
+ cursor: pointer;
+
+}
+.popup_text{
+
+
+margin-top:10%;
+
+}

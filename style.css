@@ -1,0 +1,167 @@
+*{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+
+}
+.col {
+  display: block;
+  float: left;
+  height: 655px;
+  box-sizing: border-box;
+}
+
+.col-3 {
+  width: 29%;
+  background: white;
+  float: right;
+  font-family: Bradley Hand ,cursive;
+  
+}
+
+.col-3 ul {list-style-type: none;}
+
+.account{
+ margin-left: 220px;
+ margin-top: 5px;
+}
+.month {
+  margin-top: 20px;
+  width: 100%;
+  background: #9bc7d1;
+  text-align: center;
+}
+p{
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+}
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+.col-3 h4{
+  background: #e3ccca;
+  height: 30px;
+/*  width: 100%;*/
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+}
+.footer{
+  color: #805c59;
+}
+.col-1{
+  width: 20%;
+  background: white;
+}
+
+.col-2 {
+  width: 50%;
+  background: #9bc7d1;
+  border-radius: 50px;
+}
+.col-1 ul{
+  padding-top:10%;
+ font-size: 120%;
+}
+.col-1 a{
+  text-decoration: none;
+}
+.col-1 li{
+  margin-top: 10%;
+
+}
+li{
+  list-style-type: none;
+}
+
+
+form.search input[type=text] {
+  margin-top: 5%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  margin-left: 10%;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+.row-1{
+  border-radius: 10px;
+  height: 15%;
+  width: 85%;
+  background-color: white;
+  margin-left: 8%;
+  margin-top: 5px;
+}
+.rows{
+  height: 60px;
+  width: 100%;
+ margin-left: 50px;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.rows1{
+  height:120px ;
+  width: 25%;
+  background: floralwhite;
+}
+.rows2{
+  height:120px ;
+  width: 25%;
+  background: floralwhite;
+}
+.rows3{
+  height:120px ;
+  width: 25%;
+  background: floralwhite;
+}
+
+.row-3{
+  margin-top: 5%;
+}

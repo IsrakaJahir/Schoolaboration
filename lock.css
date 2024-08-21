@@ -1,0 +1,70 @@
+.col2{
+	height: 450px;
+	width: 25%;
+	margin-left: 20%;
+	background-color:black;
+}
+.launch-time{
+	display: flex;
+	margin-left: 580px;
+	margin-top: 9%;
+}
+.launch-time div{
+	flex-basis:60px;
+	
+
+}
+.launch-time div p{
+	font-size:120px;
+	margin-botton:-14;
+}
+
+.track{
+
+	height:530px;
+	width: 300px;
+	background-color: ;
+	margin-left: 77%;
+	float: left;
+	top: 100px;
+	position: absolute;
+}
+.back{
+   background-color: #c1e0e6;
+   border-radius: 10%;
+}
+.back1{
+   background-color: #c1e0e6;
+   border-radius: 10%;
+   margin-left: 8px;
+}
+.back2{
+   background-color: #c1e0e6;
+   border-radius: 10%;
+   margin-left: 8px;
+}
+.back3{
+   background-color: #c1e0e6;
+   border-radius: 10%;
+   margin-left: 8px;
+}
+.rocket{
+	width: 170px;
+	position: absolute;
+	right: 10%;
+	bottom:0;
+	animation: rocket 8s linear infinite;
+}
+@keyframes rocket{
+    0%{
+    	bottom: 0;
+    	opacity: 1.5;
+    }
+    
+    100%{
+    	bottom: 105%;
+    	opacity: 0;
+    }
+
+
+}

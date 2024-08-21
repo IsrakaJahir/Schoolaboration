@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>note_storage</title>
+  <link rel="stylesheet" type="text/css" href="#">
+  <script src="https://kit.fontawesome.com/8a69c51c01.js" crossorigin="anonymous"></script>
+  <style>
+    
+    *{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+
+}
+.col {
+  display: block;
+  float: left;
+  height: 651px;
+  box-sizing: border-box;
+}
+
+.footer{
+  color: #805c59;
+}
+.col-1{
+  width: 15%;
+  background: white;
+}
+
+.col-2 {
+  width: 60%;
+}
+.col-1 ul{
+ font-size: 100%;
+}
+.col-1 a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.65);
+  font-family: serif;
+  font-weight: 400;
+}
+.col-1 li{
+
+}
+li a{
+  
+  display: block;
+  padding: 13px;
+}
+li a:hover {
+  background-color: #e8eaed;
+}
+li{
+  list-style-type: none;
+   
+}
+
+.row-1{
+  width: 85%;
+  background-color: white;
+  margin-left: 5%;
+  margin-top: 5px;
+
+}
+
+.row-2{
+  margin-left: 5%;
+}
+.input-icons i {
+            position: absolute;
+        }
+         
+        .input-icons {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+         
+        .icon {
+            padding: 20px;
+            min-width: 40px;
+        }
+         
+        .input-field {
+            width: 100%;
+            padding: 8px;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            opacity: 0.5;
+            background: rgba(185, 147, 214, 0.23);
+        }
+        input{
+          margin-top: 12px;
+          
+        }
+  </style>
+  
+</head>
+<body>
+  <div>
+  <div class="col-1 col" style="background: linear-gradient(270deg, #8CA6DB 0%, rgba(185, 147, 214, 0.85) 100%);;">
+    <img src="images/logo.png" style="width: 170px; height:60px" >
+    <h3 style="margin-left:20px; font-family: monospace; letter-spacing:0.1rem; margin-top:10px;">Menu</h3>
+
+  <ul>
+    <li><a href="dashboard.html"><i class="fa-solid fa-th-large fa-beat"></i>  Dashboard</i></a></li>
+  <li><a href="note_storage.html"><i class="fa fa-sticky-note-o fa-beat"> </i> Note Storage</i></a></li>
+  <li><a href="course.html"><i class="fa-regular fa-folder-open fa-beat"></i> Courses</a></li>
+  <li><a href="todolist.html"><i class="fa-solid fa-list-check fa-beat"></i> To-do List</a></li>
+  <li><a href="#about"><i class="fa fa-users fa-beat"></i> Team Project</a></li>
+  <li><a href="news.html"><i class="fa fa-newspaper-o fa-beat" aria-hidden="true"></i> Campus News</a></li>
+  <li><a href="#about"><i class="fa fa-lock fa-beat" aria-hidden="true"></i> App Lock</a></li>
+  <li><a href="#about"><i class="fa fa-hourglass-start fa-beat" aria-hidden="true"></i> Exam Preparation</a></li></ul>
+
+  <h3 style="margin-left: 20px; font-family: monospace; letter-spacing:0.1rem; margin-top:20px;">General</h3>
+  <ul>
+    <li><a href="#about"><i class="fa-regular fa-circle-question fa-beat"></i> Support</a></li>
+    <li><a href="#about"><i class="fa-solid fa-screwdriver-wrench fa-beat"></i>   Help & getting started</a></li>
+
+  <li><a href="#about"><i class="fa fa-sign-out fa-beat" aria-hidden="true"></i></i> Sign Out</a></li>
+</ul>
+
+  </div>
+
+  <div class="col-2 col">
+    <div class="input-icons"style="max-width:1000px;margin-left:5%; float: left;border: none;">
+        <div class="input-icons">
+            <i class="fa fa-search icon"></i>
+            <input class="input-field" placeholder="Search for Files or Folders" type="text" name="search">
+                   <i class="fa fa-bell-o" aria-hidden="true" style="font-size: 25px; margin-top: 15px; margin-left:6%;"></i>
+                   <i class="fa fa-user-circle" aria-hidden="true" style="font-size:25px; margin-left: 11%; margin-top:15px"></i>
+        </div>
+      </div>
+   <div class="row-1">
+    <br>
+    <button style="border: none; font-size:18px; font-family: serif; background: white;">Your Folders</button>
+  </div><br>
+  <div class="Rectangle1" style="width:200px; height:100px;margin-left:5%;border-radius: 5px;background: rgba(172, 182, 229, 0.64);box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+    
+  </div>
+  <div class="Rectangle1_name">
+    <button style="border: none; margin-top:1%; font-size:15px; font-family:serif; margin-left: 5%; background-color: white;"> File Name </button>
+  </div>
+  <div class="row-2">
+    <br>
+    <button style="border: none; font-size:18px; font-family: serif; background:white;">Shared with me</button>
+  </div><br>
+  <div class="Rectangle2" style="width:200px; height:100px;margin-left:5%;border-radius: 5px;background: rgba(172, 182, 229, 0.64);box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+    
+  </div>
+  <div class="Rectangle2_name">
+    <button style="border: none; margin-top:1%; font-size:15px; font-family:serif; margin-left: 5%; background-color:white;"> File Name </button>
+  </div>
+  <br>
+  <div class="uploadFile" style= "font-size:18px; font-family: serif; background:white; margin-left: 6%;">Upload Files</div><br>
+  <div class="Rectangle3" style="width: 1000px;height: 70px; border: dotted;border-width: thin;margin-left: 5%;">
+    <i class="fa fa-upload" style="margin-left: 470px; margin-top:1%"> </i>
+    
+    <button class="file-upload-btn" style="margin-left: 400px; margin-top: 12px; border: none;background: white; font-family: serif;"> Drag and drop file or <a href="">Browse</a></button>
+  </div>
+      
+      <br>
+    <button style="border: none; font-size:18px; font-family: serif; background:white; margin-left:5%">Your Files</button>
+  <br>
+  <div class="Files"><br>
+    <button style="border: solid gray; font-size:15px; font-family: serif; background:floralwhite; margin-left:5%; width:200px; height: auto; border-width: thin; text-align: left;"> &#128193;file.zip</button>
+  </div>
+</div>
+    
+

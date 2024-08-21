@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Reset some default styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #444;
+            color: white;
+            width: 200px; /* Width of the navigation bar */
+            height: 100%; /* Full height of the viewport */
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto; /* Enable vertical scrolling if needed */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-left: 220px; /* Adjust for the width of the navigation bar */
+            padding: 20px;
+        }
+
+        /* Two Vertical Divs */
+        .vertical-div-1 {
+            width: calc(60% - 10px); /* Make each div occupy 50% of the container's width */
+            float: left; /* Float the divs to create a side-by-side layout */
+            box-sizing: border-box; /* Include padding and border in the div's total width */
+            padding: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            height: 100%;
+        }
+
+        .vertical-div-2 {
+            
+            float: left; /* Float the divs to create a side-by-side layout */
+            box-sizing: border-box; /* Include padding and border in the div's total width */
+            padding: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            margin-left: 20px;
+            margin-right: 10px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Your Website</h1>
+        <p>Welcome to your website</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- First Vertical Div -->
+        <div class="vertical-div-1">
+            <h2>Vertical Div 1</h2>
+            <p>This is the first vertical div. You can add content here.</p>
+        </div>
+
+        <!-- Second Vertical Div -->
+        <div class="vertical-div-2">
+            <h2>Vertical Div 2</h2>
+            <p>This is the second vertical div. You can add content here.</p>
+        </div>
+    </div>
+</body>
+</html>

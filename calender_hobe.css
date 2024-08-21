@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 100vh;
+/*   background:#9B59B6;
+*/   background:#c1e0e6;
+
+}
+
+.wrapper{
+	width: 450px;
+	background:#fff;
+	margin-top: 100px;
+	border-radius: 10px;
+	position: static;
+	font-family: 'Poppins', sans-serif;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+
+
+}
+header .current-date{
+	font-size: 1.45rem;
+	font-weight: 500;
+
+}
+header .icons span{
+	height: 38px;
+	width: 38px;
+	margin: 0 1px;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+header .icons span:hover{
+		background-color: #f2f2f2; 
+
+}
+.calender{
+	padding: 20px;
+}
+.calender ul{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.calender  .weeks li{
+	font-weight: 500;
+}
+.calender .days{
+	margin-bottom: 20px;
+}
+.calender .days li{
+	z-index: 1;
+	cursor: pointer;
+	margin-top: 30px;
+}
+.calender .days li::before{
+position:absolute;
+content: "";
+border-radius: 50%;
+height: 40px;
+width: 40px;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: -1;
+}
+
+.days li:hover:before{
+background:#f2f2f2; 
+
+}
+.days li.active{
+	color: white;
+}
+.days li.active:before{
+	background:#c1e0e6;
+}
+
+.days li.inactive{
+	color:#aaa; 
+}
+.calender ul li{
+	position: relative;
+	width: calc(100%/7);
+}
+.popup{
+  
+  width: 400px;
+  height: 460px;
+/*  background-color:#c8a2c8;
+*/    background-color:#86bdb6;
+  position: absolute;
+  border-radius: 6px;
+  top: 400px;
+  left:0%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  visibility: hidden;
+  transition: transform 0.4s,top 0.4s;
+  font-size: 15px; 
+  font-family: 'Poppins', sans-serif;
+
+
+}
+.open-popup{
+
+visibility: visible;
+top: 330px;
+left:83%;
+
+transform: translate(-50%,-50%) scale(1);
+
+}
+.popup button{
+ width: 70px;
+ margin-top: 50px;
+ padding: 10px 0;
+ background: rgb(218,227,243);
+ color: black;
+ border:0px;
+ outline: none;
+ font-size: 18px;
+ border-radius: 4px;
+ cursor: pointer;
+
+}
+.popup_text{
+margin-top:5px;
+
+}
+h1{
+
+	 font-family: 'Poppins', sans-serif;
+	 color: white;
+}
+.event{
+   color:white;
+   font-size: 18px;
+   margin-top: 60px;
+
+}
+.event .event_start_date{
+	color: white;
+	margin-left: 10px;
+	float: left;
+}
+.event .event_name{
+	float: left;
+    margin-left: 10px;
+}
+.event .form-control{
+	width: 60%;
+}
+.leftpanel{
+
+	padding: 0;
+    float: left;
+    width: 200px;
+    height: 460px;
+    background: #86bdb6;
+    margin-top: 8%;
+    border-radius: 2%;
+    margin-right: 52%;
+    position: absolute;
+    /*transform: translate(-50%,-50%) scale(1);
+    text-align: center;*/
+    /*visibility: hidden;*/
+    /*transition: transform 0.4s,top 0.4s;
+    font-size: 15px; 
+    font-family: 'Poppins', sans-serif;*/
+
+
+}
+/*.open-popupleft{
+
+visibility: visible;
+top: 330px;
+right:83%;
+transform: translate(-50%,-50%) scale(1);
+
+}*/
+.navpanel{
+
+height: 650px;
+width:15%;
+background-color: white;
+position: absolute;
+margin-right: 85%;
+float: left;
+font-size: 120%;
+margin-top:88px;
+}
+.navpanel a{
+  text-decoration: none;
+}
+.navpanel li{
+  margin-top: 10%;
+list-style-type: none;
+margin-left: 20px;
+
+}
+
+

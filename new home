@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    
+    <meta charset="UTF-8">
+ <link rel="stylesheet" href="course.css">
+    
+   
+    <title>course</title>
+ 
+   <script src="https://kit.fontawesome.com/8a69c51c01.js" crossorigin="anonymous"></script>
+</head>
+<body><div class="Homepage" style="width: 1440px; height: 1024px; position: relative; background: white">
+  <div class="Rectangle1" style="width: 1440px; height: 922px; left: 0px; top: 102px; position: absolute; background: linear-gradient(270deg, rgba(12.50, 0, 255, 0.12) 38%, rgba(87, 199, 228, 0.12) 62%, rgba(118.39, 203.42, 194.93, 0.09) 100%, rgba(236, 220, 71, 0) 100%); border-top-left-radius: 50px; border-top-right-radius: 50px"></div>
+  <img class="Library777x437RemovebgPreview1" style="width: 669px; height: 422px; left: 747px; top: 301px; position: absolute" src="https://via.placeholder.com/669x422" />
+  <div class="Group1" style="width: 515px; height: 15px; left: 858px; top: 48px; position: absolute">
+    <div class="Home" style="left: 0px; top: 0px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">HOME</div>
+    <div class="Contact" style="left: 108px; top: 0px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">CONTACT</div>
+    <div class="AboutUs" style="left: 228px; top: 0px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">ABOUT US</div>
+    <div class="SignUp" style="left: 355px; top: 0px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">SIGN UP</div>
+    <div class="LogIn" style="left: 474px; top: 0px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">LOG IN</div>
+  </div>
+  <div class="ElevateYourStudentLifeWithOurAiPoweredTaskmaster" style="width: 720px; height: 150px; left: 57px; top: 400px; position: absolute"><span style="color: black; font-size: 40px; font-family: Inter; font-weight: 300; word-wrap: break-word"><br/></span><span style="color: rgba(0, 0, 0, 0.79); font-size: 48px; font-family: Alatsi; font-weight: 400; word-wrap: break-word">Elevate Your Student Life with our AI-Powered Taskmaster<br/><br/></span></div>
+  <div class="UnlockYourPotential" style="left: 57px; top: 362px; position: absolute; color: black; font-size: 40px; font-family: Antic Didone; font-weight: 400; word-wrap: break-word">Unlock Your Potential</div>
+  <div class="Rectangle2" style="width: 240px; height: 60px; left: 230px; top: 693px; position: absolute; background: rgba(118.39, 203.42, 194.93, 0.45); border-radius: 50px"></div>
+  <div class="LearnMore" style="left: 287px; top: 708px; position: absolute; color: black; font-size: 24px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Learn More</div>
+  <div class="StayOrganizedCrushStressAndSuperchargeProductivity" style="left: 57px; top: 594px; position: absolute; color: rgba(0, 0, 0, 0.79); font-size: 24px; font-family: Antic; font-weight: 400; word-wrap: break-word">Stay Organized, Crush Stress, and Supercharge Productivity</div>
+  <img class="FreeSimpleModernCircleDesignStudioLogoRemovebgPreview3" style="width: 197px; height: 100px; left: 0px; top: -10px; position: absolute" src="https://via.placeholder.com/197x100" />
+</div>
+</body>
+</html>

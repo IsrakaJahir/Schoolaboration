@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+ <link rel="stylesheet" href="course.css">
+   
+   <script src="https://kit.fontawesome.com/8a69c51c01.js" crossorigin="anonymous"></script>
+  <title>Daily Routine Organizer</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: cadetblue;
+      text-align: center;
+      margin-top: 30px;
+    }
+     .col-1{
+        height: 500px;
+        font-family: times new roman;
+
+     }
+    .container {
+      max-width: 800px;
+      height: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .section {
+      margin-bottom: 10px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #333;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .section .content {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .section .content textarea {
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+     .todo{
+        float: right;
+     }
+    .date {
+      text-align: right;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: cadetblue;
+    }
+
+    .btn-primary:hover {
+      background-color: #c1e0e6;
+      color: black;
+    }
+
+    .btn-secondary {
+      background-color: #f44336;
+    }
+
+    .btn-secondary:hover {
+      background-color: #da190b;
+    }
+
+    .task-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .task-item input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .task-item label {
+      font-size: 14px;
+      flex-grow: 1;
+    }
+
+    .task-item .delete-btn {
+      background-color: #f44336;
+      border: none;
+      color: cadetblue;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .task-item .delete-btn:hover {
+      background-color: #da190b;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+     <div class="row-1 row"><br>
+      <img src="images/logo.png" style="margin-left: 10%;" height="65" width="65">
+   SCHOOLABORATION
+
+     </div>
+       <div class="row-2 row"><br>
+       
+       </div>
+    <div class="row-3 row">
+      <br>
+      <div class="account">
+      <i class="fa fa-sliders" aria-hidden="true" style="font-size: 25px;"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-bell-o" aria-hidden="true" style="font-size: 25px;"></i>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-user-circle" aria-hidden="true" style="font-size:25px;"></i>
+    </div>
+   </div>
+
+  </div>
+
+<div class="main-content clear">
+
+  <div class="col-1 col">
+  <ul>
+  <li><a href="note_storage.html"><i class="fa fa-sticky-note-o"></i>Note Storage</i></a></li>
+  <li><a href="course.html"><i class="fa fa-th-large" aria-hidden="true"></i>Courses</a></li>
+  <li><a href="todolist.html"><i class="fa fa-tasks" aria-hidden="true"></i><font color="red">To-do List</font></a></li>
+  <li><a href="team_project.html"><i class="fa fa-users" aria-hidden="true"></i>Team Project</a></li>
+  <li><a href="reminder.html"><i class="fa fa-bell-o" aria-hidden="true"></i>Reminder</a></li>
+  <li><a href="calender hobe.html"><i class="fa fa-calendar-o" aria-hidden="true"></i>Calender</a></li>
+  <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Campus News</a></li>
+  <li><a href="lock.html"><i class="fa fa-lock" aria-hidden="true"></i>App Lock</a></li>
+  <li><a href="exam.html"><i class="fa fa-hourglass-start" aria-hidden="true"></i>Exam Preparation</a></li>
+  <li><a href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i></i>Sign Out</a></li>
+</ul>
+
+  </div>
+  <div class="container">
+    <h1>Daily Routine Organizer</h1>
+    <div class="date">
+      <span id="currentDate"></span>
+    </div>
+
+    <div class="section">
+      <h2>Notes</h2>
+      <div class="content">
+        <textarea id="notes" placeholder="Write your notes here" style="width: 240px; height: 200px;"></textarea>
+        <div class="todo">
+      <h2>To-Do List</h2>
+      <div class="content">
+        <ul id="todoList"></ul>
+        <div>
+          <input type="text" id="taskInput" placeholder="Add a new task">
+          <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
+          <button id="clearTasksBtn" class="btn btn-secondary">Clear Tasks</button>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+</div>
+
+  <script>
+    // Get the current date and display it
+    const currentDate = new Date().toLocaleDateString('en-US', {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric'
+    });
+
+    document.getElementById('currentDate').textContent = currentDate;
+
+    // Add Task Button Click Event
+    const addTaskBtn = document.getElementById('addTaskBtn');
+    const taskInput = document.getElementById('taskInput');
+    const todoList = document.getElementById('todoList');
+
+    addTaskBtn.addEventListener('click', function() {
+      const taskName = taskInput.value.trim();
+
+      if (taskName !== '') {
+        const todoItem = document.createElement('li');
+        todoItem.classList.add('task-item');
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.addEventListener('change', function() {
+          if (checkbox.checked) {
+            todoItem.classList.add('completed');
+          } else {
+            todoItem.classList.remove('completed');
+          }
+        });
+
+        const label = document.createElement('label');
+        label.textContent = taskName;
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.classList.add('delete-btn');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.addEventListener('click', function() {
+          todoItem.remove();
+        });
+
+        todoItem.appendChild(checkbox);
+        todoItem.appendChild(label);
+        todoItem.appendChild(deleteBtn);
+        todoList.appendChild(todoItem);
+
+        taskInput.value = '';
+      }
+    });
+
+    // Clear Tasks Button Click Event
+    const clearTasksBtn = document.getElementById('clearTasksBtn');
+
+    clearTasksBtn.addEventListener('click', function() {
+      const completedTasks = document.querySelectorAll('.task-item.completed');
+
+      completedTasks.forEach(function(task) {
+        task.remove();
+      });
+    });
+  </script>
+</body>
+</html>

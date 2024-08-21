@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoteStorage</title>
+  <link rel="stylesheet" type="text/css" href="note_storage.css">
+  <script src="https://kit.fontawesome.com/8a69c51c01.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="lock.css">
+  
+</head>
+<body>
+  <div class="header">
+     <div class="row-1 row"><br>
+      <img src="images/logo.png" style="margin-left: 10%;" height="65px" width="65px">
+   SCHOOLABORATION
+
+     </div>
+       <div class="row-2 row"><br>
+        <!-- <h2 >Stay Focus</h2> -->
+       </div>
+    <div class="row-3 row">
+      <br>
+     
+
+      <div class="account">
+      <i class="fa fa-sliders" aria-hidden="true" style="font-size: 25px;"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-bell-o" aria-hidden="true" style="font-size: 25px;"></i>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-user-circle" aria-hidden="true" style="font-size:25px;"></i>
+    </div>
+   </div>
+
+  </div>
+
+<div class="main-content clear">
+
+  <div class="col-1 col">
+  <ul>
+  <li><a href="dashboard.html"><i class="fa fa-sticky-note-o"></i>Note Storage</i></a></li>
+  <li><a href="course.html"><i class="fa fa-th-large" aria-hidden="true"></i></i>Courses</a></li>
+  <li><a href="todolist.html"><i class="fa fa-tasks" aria-hidden="true"></i>To-do List</a></li>
+  <li><a href="team_project.html"><i class="fa fa-users" aria-hidden="true"></i>Team Project</a></li>
+  <li><a href="reminder.html"><i class="fa fa-bell-o" aria-hidden="true"></i>Reminder</a></li>
+  <li><a href="calender hobe.html"><i class="fa fa-calendar-o" aria-hidden="true"></i>Calender</a></li>
+  <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Campus News</a></li>
+  <li><a href="#lock.html"><i class="fa fa-lock" aria-hidden="true"></i><font color="red">App Lock</font></a></li>
+  <li><a href="exam.html"><i class="fa fa-hourglass-start" aria-hidden="true"></i>Exam Preparation</a></li>
+  <li><a href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i></i>Sign Out</a></li>
+</ul>
+
+  </div>
+   
+  <div class="col-2 col">
+    <div class="box">
+      .
+      <div class="box1"> 
+        <button type="submit" class="newfolder" onclick="openPopup()"><i class="fa fa-plus"></i> Add blocklist</i></button>
+      </div>
+      <div class="box1"> 
+<!--         <a href="#"><i class="fa fa-angle-right"></i> add time</i></a>
+ -->    
+     <button type="submit" class="newfolder" onclick="openPopup1()"><i class="fa fa-plus"></i> Add blocklist</i></button>
+
+     </div>
+      <div class="box1"> 
+        <a href="#"><i class="fa fa-angle-right"></i> my list</i></a>
+      </div>
+      <div class="box1"> 
+        <a href="#"><i class="fa fa-angle-right"></i> </i></a>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+  <div class="launch-time">
+          <div class="back">
+            <p id="days">00&nbsp</p>
+                 <span>&nbsp&nbsp&nbsp&nbspDays&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+          </div>
+          <div class="back1">
+            <p id="hours">00</p>
+                 <span>&nbsp&nbspHours(hr)&nbsp&nbsp&nbsp</span>
+          </div>
+          <div class="back2">
+            <p id="minutes">00&nbsp</p>
+                 <span>&nbsp&nbspMinutes&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+          </div>
+          <div class="back3">
+            <p id="seconds">00</p>
+                 <span>&nbsp&nbspSeconds</span>
+          </div>
+        </div>
+
+     <div class="track">
+
+      <div>
+              <img src="images/tor.png" class="rocket">
+            </div>
+     </div>
+
+          <div class="popup" id="popup">
+      <div class="popup_text">
+        <br>
+        <br>
+        <h1> Add to Blocklist</h1>
+      <br>
+      <input placeholder="Enter valid address" class="Search">
+      <br>
+      <button type="button"onclick="closePopup()">OK</button>
+      <button type="button" onclick="closePopup()">Cancel</button>
+     </div>
+</div>
+
+<div class="popup" id="popup1">
+      <div class="popup_text">
+        <br>
+        <br>
+        <h1> Add time</h1>
+      <br>
+      <input placeholder="Enter ammount of minutes" class="Search">
+      <br>
+      <button type="button"onclick="closePopup1()">OK</button>
+      <button type="button" onclick="closePopup1()">Cancel</button>
+     </div>
+</div>
+
+
+</body>
+ <script type="text/javascript">
+      var countDowndate=new Date("May 30,2023 00:00:00").getTime();
+      var x= setInterval(function(){
+        var now=new Date().getTime();
+        var distance=countDowndate-now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+            document.getElementById("days").innerHTML=days;
+            document.getElementById("hours").innerHTML=hours;
+            document.getElementById("minutes").innerHTML=minutes;
+            document.getElementById("seconds").innerHTML=seconds;
+
+
+      },1000)
+
+
+
+
+    </script>
+    <script type="text/javascript">
+  
+  let popup=document.getElementById("popup");
+  let popup1=document.getElementById("popup1");
+function openPopup(){
+  popup.classList.add("open-popup");
+
+}
+function openPopup1(){
+  popup1.classList.add("open-popup");
+
+}
+function closePopup(){
+  popup.classList.remove("open-popup");
+
+}
+function closePopup1(){
+  popup1.classList.remove("open-popup");
+
+}
+
+
+</script>
+    </html>
+
